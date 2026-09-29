@@ -7,7 +7,7 @@ import { TrainingTimeline } from "@/components/TrainingTimeline";
 import { VolunteerWork } from "@/components/VolunteerWork";
 import { profile } from "@/lib/content";
 
-const description = `${profile.name}, ${profile.credentials} — ${profile.role.toLowerCase()}. Education and training, selected research publications, and community volunteer work.`;
+const description = `${profile.name}, ${profile.credentials} — ${profile.role.toLowerCase()}. Education and training, selected research publications, and the community work she does outside the clinic.`;
 
 export const Route = createFileRoute("/")({
   head: () => ({

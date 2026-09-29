@@ -29,7 +29,7 @@ export const navLinks = [
   { label: "About", href: "#about" },
   { label: "Training", href: "#training" },
   { label: "Research", href: "#research" },
-  { label: "Volunteer", href: "#volunteer" },
+  { label: "Outside the Clinic", href: "#volunteer" },
 ];
 
 export type TrainingEntry = {
@@ -62,7 +62,7 @@ export const training: TrainingEntry[] = [
   {
     year: "2021",
     title: "Digital Ortho Fellowship",
-    detail: "Meridian Institute · 3D scanning & aligner design",
+    detail: "Meridian Institute · 3D scanning and aligner design",
   },
 ];
 
