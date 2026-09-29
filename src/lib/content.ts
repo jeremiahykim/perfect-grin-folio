@@ -11,15 +11,9 @@ import missionImage from "@/assets/volunteer-mission.jpg";
 export const profile = {
   name: "Dr. Elena Marsh",
   credentials: "DDS, MS",
-  eyebrow: "Department of Orthodontics",
   role: "Assistant Professor · Board-Certified Orthodontist",
   about:
     "I practice adult and adolescent orthodontics with a focus on skeletal discrepancy and digital workflow. My clinical and research work centers on predictable, low-intervention treatment for complex cases.",
-  stats: [
-    { label: "Practice", value: "14 yrs" },
-    { label: "Patients", value: "2,300+" },
-    { label: "Focus", value: "3 areas" },
-  ],
   email: "emarsch@calloway.edu",
   phone: "(555) 014-2280",
   institution: "Calloway University",
