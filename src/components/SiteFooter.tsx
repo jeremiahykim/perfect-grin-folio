@@ -19,7 +19,7 @@ export function SiteFooter() {
               {profile.email}
             </a>
           </p>
-          <p class="mt-1">{profile.phone}</p>
+          <p className="mt-1">{profile.phone}</p>
         </div>
       </div>
     </footer>
