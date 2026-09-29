@@ -1,4 +1,4 @@
-import headshot from "@/assets/headshot.jpg";
+import headshot from "@/assets/headshot.jpeg";
 import { profile } from "@/lib/content";
 
 export function Hero() {
@@ -20,9 +20,9 @@ export function Hero() {
           <img
             src={headshot}
             alt={`Portrait of ${profile.name}`}
-            width={1088}
-            height={1440}
-            className="h-full min-h-[320px] w-full bg-brand-soft object-cover object-top outline-1 -outline-offset-1 outline-black/5 md:aspect-[5/4] md:h-auto md:min-h-0"
+            width={2000}
+            height={1486}
+            className="h-full min-h-[320px] w-full bg-brand-soft object-cover object-center outline-1 -outline-offset-1 outline-black/5 md:aspect-[4/3] md:h-auto md:min-h-0"
           />
         </div>
       </div>

@@ -1,7 +1,6 @@
-import clinicImage from "@/assets/volunteer-clinic.jpg";
-import healthFairImage from "@/assets/volunteer-healthfair.jpg";
-import mentorshipImage from "@/assets/volunteer-mentorship.jpg";
-import missionImage from "@/assets/volunteer-mission.jpg";
+import classroomImage1 from "@/assets/volunteer-classroom1.jpg";
+import classroomImage2 from "@/assets/volunteer-classroom2.jpg";
+import childrensBookImage from "@/assets/volunteer-childrens-book.jpg";
 
 /*
  * Everything on the page is driven from this file. Swap the placeholder
@@ -9,14 +8,13 @@ import missionImage from "@/assets/volunteer-mission.jpg";
  */
 
 export const profile = {
-  name: "Dr. Elena Marsh",
-  credentials: "DDS, MS",
-  role: "Assistant Professor · Board-Certified Orthodontist",
+  name: "Dr. Jeremiah Kim",
+  credentials: "DDS",
+  role: "Craniofacial Orthodontist · Children's Book Author",
   about:
-    "I practice adult and adolescent orthodontics with a focus on skeletal discrepancy and digital workflow. My clinical and research work centers on predictable, low-intervention treatment for complex cases.",
-  email: "emarsch@calloway.edu",
-  phone: "(555) 014-2280",
-  institution: "Calloway University",
+    "I practice ...",
+  email: "jeremiah.yr.kim@gmail.com",
+  phone: "(661) 481-6070"
 };
 
 export const navLinks = [
@@ -34,30 +32,25 @@ export type TrainingEntry = {
 
 export const training: TrainingEntry[] = [
   {
-    year: "2009",
-    title: "B.S. Biology",
-    detail: "Ridgeway University · graduated magna cum laude",
-  },
-  {
-    year: "2013",
-    title: "Doctor of Dental Surgery",
-    detail: "Halvern School of Dentistry · Dean's List",
-  },
-  {
-    year: "2016",
-    title: "Orthodontic Residency",
-    detail: "Calloway University · AAO-accredited program",
-  },
-  {
     year: "2018",
-    title: "Faculty Appointment",
-    detail: "Assistant Professor, Department of Orthodontics",
+    title: "B.A. Biology with Honors, Architecture",
+    detail: "Williams College · Bruce Sanderson Prize in Architecture",
   },
   {
-    year: "2021",
-    title: "Digital Ortho Fellowship",
-    detail: "Meridian Institute · 3D scanning and aligner design",
+    year: "2023",
+    title: "Doctor of Dental Medicine",
+    detail: "Harvard University · Gerald Shklar Memorial Award",
   },
+  {
+    year: "2026",
+    title: "Orthodontic Residency",
+    detail: "Albert Einstein College of Medicine · Chief Resident, Montefiore Aware of Excellence",
+  },
+  {
+    year: "2027",
+    title: "Craniofacial Orthodontics Fellowship",
+    detail: "Children's Hospital Los Angeles",
+  }
 ];
 
 export type Publication = {
@@ -107,36 +100,67 @@ export const publications: Publication[] = [
   },
 ];
 
+/*
+ * "Outside the Clinic" cards. Each card shows its first photo with the title
+ * on top. Clicking a card opens a full-size viewer where visitors can flip
+ * through every photo in this section with the < and > arrows.
+ *
+ * To add more photos to a card, put another { image, alt, caption } entry in
+ * its photos list (and import the image at the top of this file).
+ */
+export type VolunteerPhoto = {
+  image: string;
+  /* Description for screen readers and if the image fails to load. */
+  alt: string;
+  /* Text shown when hovering over the enlarged photo. Falls back to the
+     card's blurb when left out. */
+  caption?: string;
+  /* Optional: which part of the photo stays visible when it is cropped
+     to fit the card, e.g. "center", "top", "30% 50%". */
+  position?: string;
+};
+
 export type VolunteerItem = {
   title: string;
   blurb: string;
-  image: string;
-  alt: string;
+  photos: VolunteerPhoto[];
 };
 
 export const volunteer: VolunteerItem[] = [
   {
-    title: "FreeSmile Clinics",
-    blurb: "Weekend screenings for underserved families in the metro area.",
-    image: clinicImage,
-    alt: "A dentist examining a young child at a free community dental clinic",
+    title: "School Visits",
+    blurb: "Talking with middle and high school students about careers in dentistry.",
+    photos: [
+      {
+        image: classroomImage1,
+        alt: "Jeremiah presenting to a classroom of students in front of a screen",
+        caption: "Talking with middle and high school students about careers in dentistry.",
+        position: "35% 50%",
+      },
+    ],
   },
   {
-    title: "Youth Mentorship",
-    blurb: "Mentoring pre-dental students through clinical rotations.",
-    image: mentorshipImage,
-    alt: "A dentist guiding two students at a workshop table with dental models",
+    title: "Classroom Lessons",
+    blurb: "Teaching students how teeth and oral health work, with models and slides.",
+    photos: [
+      {
+        image: classroomImage2,
+        alt: "Jeremiah teaching a class with images of dental arches on a screen",
+        caption: "Teaching students how teeth and oral health work, with models and slides.",
+        position: "40% 50%",
+      },
+    ],
   },
   {
-    title: "Global Aid Missions",
-    blurb: "Annual trips providing orthodontic care in rural regions.",
-    image: missionImage,
-    alt: "A volunteer dental team working at a tented rural outreach clinic",
-  },
-  {
-    title: "Health Fairs",
-    blurb: "Public education on prevention and early intervention.",
-    image: healthFairImage,
-    alt: "A dentist speaking with a family at a community health fair table",
+    title: "Children's Book",
+    blurb: "The Mouth Guardians: a children's book that makes dentistry and oral health fun for kids.",
+    photos: [
+      {
+        image: childrensBookImage,
+        alt: "Jeremiah holding his children's book, The Mouth Guardians",
+        caption: "A children's book that makes dentistry and oral health fun for kids.",
+        position: "50% 40%",
+      },
+    ],
   },
 ];
