@@ -15,6 +15,7 @@ export function Hero() {
           <p className="mt-8 max-w-[46ch] text-pretty text-base leading-relaxed text-muted-foreground">
             {profile.about}
           </p>
+        </div>
         <div className="md:col-span-7">
           <img
             src={headshot}
