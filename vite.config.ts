@@ -26,11 +26,15 @@ function normalizeBase(value?: string) {
 }
 
 export default defineConfig({
-  tanstackStart: staticExport
+  // Only pass `tanstackStart` when the static build is requested: the option
+  // accepts an object or nothing, not undefined.
+  ...(staticExport
     ? {
-        router: { basepath: basePath },
-        prerender: { enabled: true, crawlLinks: true },
+        tanstackStart: {
+          router: { basepath: basePath },
+          prerender: { enabled: true, crawlLinks: true },
+        },
       }
-    : undefined,
-  vite: staticExport ? { base: basePath } : undefined,
+    : {}),
+  vite: staticExport ? { base: basePath } : {},
 });
