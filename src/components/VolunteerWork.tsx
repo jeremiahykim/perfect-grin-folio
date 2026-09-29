@@ -6,7 +6,7 @@ export function VolunteerWork() {
       <div className="mx-auto max-w-6xl px-6 py-16 md:py-24">
         <div className="mb-12 flex flex-wrap items-baseline justify-between gap-2">
           <h2 className="text-balance font-display text-3xl font-medium tracking-tight text-ink sm:text-4xl">
-            Volunteer Work
+            Outside the Clinic
           </h2>
           <span className="font-mono text-[11px] uppercase tracking-[0.16em] text-muted-foreground">
             Community

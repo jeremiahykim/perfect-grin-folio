@@ -81,14 +81,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "Portfolio of Dr. Elena Marsh, board-certified orthodontist and assistant professor: education and training, selected research publications, and community volunteer work.",
+          "Portfolio of Dr. Elena Marsh, board-certified orthodontist and assistant professor: education and training, selected research publications, and community work outside the clinic.",
       },
       { name: "author", content: "Dr. Elena Marsh" },
       { property: "og:title", content: "Dr. Elena Marsh, DDS, MS — Orthodontist" },
       {
         property: "og:description",
         content:
-          "Education and training, selected research publications, and community volunteer work.",
+          "Education and training, selected research publications, and community work outside the clinic.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
