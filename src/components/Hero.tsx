@@ -22,7 +22,7 @@ export function Hero() {
             alt={`Portrait of ${profile.name}`}
             width={1088}
             height={1440}
-            className="h-full min-h-[320px] w-full bg-brand-soft object-cover outline-1 -outline-offset-1 outline-black/5 md:min-h-[520px]"
+            className="h-full min-h-[320px] w-full bg-brand-soft object-cover object-top outline-1 -outline-offset-1 outline-black/5 md:aspect-[5/4] md:h-auto md:min-h-0"
           />
         </div>
       </div>
