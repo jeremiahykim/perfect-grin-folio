@@ -33,9 +33,4 @@ export default defineConfig({
       }
     : undefined,
   vite: staticExport ? { base: basePath } : undefined,
-  // Pin the output layout so the deployable folder is dist/client whether the
-  // build runs here in Lovable or in your own CI.
-  nitro: staticExport
-    ? { output: { dir: "dist", publicDir: "client", serverDir: "server" } }
-    : undefined,
 });
