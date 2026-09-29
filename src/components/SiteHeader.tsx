@@ -12,7 +12,7 @@ export function SiteHeader() {
             Orthodontics
           </span>
         </div>
-        <nav className="flex w-full flex-wrap items-center justify-between gap-x-4 gap-y-1 font-mono text-[10px] uppercase tracking-[0.16em] text-muted-foreground sm:w-auto sm:justify-end sm:gap-x-6 sm:text-[11px]">
+        <nav className="flex w-full flex-wrap items-center justify-between gap-x-3 gap-y-1 font-mono text-[10px] uppercase tracking-[0.16em] text-muted-foreground sm:w-auto sm:justify-end sm:gap-x-6 sm:text-[11px]">
           {navLinks.map((link) => (
             <a
               key={link.href}
