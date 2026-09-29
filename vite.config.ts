@@ -32,12 +32,5 @@ export default defineConfig({
         prerender: { enabled: true, crawlLinks: true },
       }
     : undefined,
-  nitro: staticExport
-    ? {
-        preset: "static",
-        // Pin the layout so the deployable folder is dist/client everywhere.
-        output: { dir: "dist", publicDir: "client", serverDir: "server" },
-      }
-    : undefined,
   vite: staticExport ? { base: basePath } : undefined,
 });
