@@ -54,10 +54,9 @@ The build is switched to static export by two environment variables, read in
 
 The buildable output lands in `.output/public`.
 
-To use a custom domain, add it under **Settings → Pages → Custom domain**, then
-create a repository variable named `BASE_PATH` with the value `/`
-(**Settings → Secrets and variables → Variables → Actions → New repository
-variable**) and push again.
+To use a custom domain, add it under **Settings → Pages → Custom domain** and
+run the workflow again. The workflow reads the Pages settings and picks the
+right `BASE_PATH` by itself, so no repository variable is needed.
 
 ### Building the static files by hand
 
